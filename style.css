@@ -1,0 +1,328 @@
+/* General style of the web page */
+body{
+    margin: 0;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Blinker', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+}
+h2{
+    font-family: 'Blinker', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+}
+h3{
+    font-size: 40px;
+    left: 10px;
+    display: block;
+    margin: 5px;
+    font-family: 'Blinker', sans-serif;
+}
+h4{
+    font-size: 30px;
+    left: 10px;
+    display: block;
+    margin: 5px;
+    font-family: 'Blinker', sans-serif;
+}
+h5{
+    font-size: 20px;
+    left: 10px;
+    display: block;
+    margin: 5px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+p{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    margin: 5px;
+}
+button{
+    background-color: green;
+    padding: 4px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: none;
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: #ffffff;
+    padding: 4px;
+    font-family: 'Noto Sans JP', sans-serif;
+    border: 2px solid #008000;
+    color: #008000;
+}
+input{
+    width: 40%;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+/* style of the header */
+.headerBar{
+    background-color: green;
+    width: 100%;
+    height: 40px;
+    flex-basis: 100%;
+}
+.items{
+    display: flex;
+    align-content: center;
+    float: right;
+    margin-right: 20px;
+    height: 40px;
+}
+#headerLink{
+    width: 60%;
+    padding: 10px;
+    text-align: center;
+    align-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+    color: #FFFFFF;
+    font-family: 'Blinker', sans-serif;
+}
+#headerLink:hover{
+    background-color: #ADFF2F;
+    color: #778899;    
+}
+#headerLink:active{
+    background-color: #013220;
+    color: #FFFFFF;    
+}
+
+/* style of the language select box */
+.langMenu{
+    width: max-content;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    position: relative;
+    margin-top: 10px;
+}
+.langMenu:hover ul{
+    display: block;
+}
+.langMenu .selected{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: #d3d3d3;
+    border-radius: 20px;
+    color: #474747;
+    align-content: center;
+    justify-content: center;
+    width: 90px;
+    height: 20px;
+}
+.langMenu ul{
+    margin: 0;
+    padding: 6px 0px;
+    background-color: #d3d3d3;
+    color: #000;
+    display: none;
+    position: absolute;
+    top: 22px;
+    width: 80px;
+    margin-left: 5px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+.langMenu ul li{
+    text-decoration: none;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+}
+.langMenu ul li a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: #000;
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+.langMenu ul li a:hover{
+    background-color: #ADFF2F;
+}
+
+/* style of the navigation bar below the header part */
+*{
+    box-sizing: border-box;
+}
+.nav{
+    padding: 20px;
+    background-color: white;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    height: fit-content;
+}
+.navLeftPart{
+    width: 70%;
+}
+.navRightPart{
+    width: 30%;
+    padding: 10px;
+    align-items: flex-end;
+}
+.navRightPart input{
+    font-size: 12px;
+}
+.navRightPart button{
+    width: 60px;
+    padding: 5px;
+}
+.home img{
+    width: 150px;
+}
+.home{
+    float: left;
+    text-align: left;
+    width: 150px;
+}
+.navLink{
+    display: flex;
+    position: relative;
+    align-content: center;
+    padding-left: 20px;
+}
+.navLink a{
+    text-decoration: none;
+    margin: auto;
+    color: #808080;
+    font-family: 'Blinker', sans-serif;
+    font-size: 16px;
+    transform: translateY(10%);
+    margin: 10px 20px;
+    transition: 0.3s;
+    width: fit-content;
+}
+.navLink a:hover{
+    color: #000;
+    background-color: #808080;
+    padding: 5px;
+    border-radius: 5px;
+}
+.glass{
+    display: none;
+}
+
+/* style of the middle part */
+.LearnMore{
+    color: white;
+    position: relative;
+}
+.LearnMore img{
+    width: 100%;
+    filter: brightness(0.4);
+    height: 300px;
+}
+.BriefIntroduction{
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Blinker', sans-serif;
+    font-size: 40px;
+    width: 100%;
+}
+#learnMoreId{
+    background-color: green;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+#learnMoreId:hover{
+    background-color: #FFFFFF;
+    color: green;
+    border: 1px solid green;
+    font-size: 20px;
+}
+*{
+    box-sizing: border-box;
+}
+.pic{
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.companyPicture img,.productsPicture img,.contactPicture img{
+    height: 230px;
+    width: 300px;
+    filter: brightness(0.5);
+    object-fit: cover;
+}
+.companyPicture,.productsPicture,.contactPicture{
+    float: left;
+    width: 33.3%;
+    padding: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#company,#product,#contact{
+    font-family: 'Blinker', sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    z-index: 1;
+    position: absolute;
+}
+*{
+    box-sizing: border-box;
+}
+.turnover{
+    display: flex;
+    position: relative;
+    padding: 10px;
+    width: 100%;
+    font-family: 'Blinker', sans-serif;
+    align-content: center;
+    justify-content: center;
+    color: #013220; 
+}
+.client,.employee,.users{
+    width: 10%;
+    padding: 5px;
+    height: auto;
+    margin: 0px 10px;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.client p,.employee p,.users p{
+    left: 10px;
+    display: block;
+    margin: 5px;
+}
+.client p:before,.employee p:before,.users p:before{
+    content: "";
+    display: block;
+}
+article{
+    color: #000;
+    background-color: #d3d3d3;
+    width: 100%;
+    height: auto;    
+    padding: 5px 10px 10px 10px;
+    position: relative;
+}
+.articleNews, .referencesCard{
+    background-color: white;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
