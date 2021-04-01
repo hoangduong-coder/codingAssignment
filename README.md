@@ -2,6 +2,7 @@
 
 ## Project introduction and instructions
 This project is a UI of a web page. Though I have try my best but bugs is always inevitable. I always highly appreciate your compliments to improve the quality of my project.
+
 The project contains these files:
 - `main.html` : The home page:
   - Contains all infomation same with requirements given. User can select the display language is English/Finnish. There is an animation of the number of clients, users and employees so that those numbers will be counted up to a specified number.
@@ -20,6 +21,7 @@ This project follows GPLv2 copyright.
 
 ## More details behind the project
 There are some problems that I have not completed yet. For example, working with (`.rss`) file is an obstacle, as I was lack of experiences in handle with these technologies, though I have found how should I do with this file.
+
 I have spent 2 - 6 hours in average per day since the day I started working with this project on March 18, depended on my studying schedule at school.
 
 ## Contact infomation
