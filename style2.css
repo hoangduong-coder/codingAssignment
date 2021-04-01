@@ -1,0 +1,154 @@
+@media only screen and (max-width: 1000px){
+    .companyPicture img,.productsPicture img,.contactPicture img{
+        height: 200px;
+        width: 250px;
+        filter: brightness(0.5);
+        object-fit: cover;
+    }
+    #company,#product,#contact{
+        font-size: 30px;
+    }
+    .client,.employee,.users{
+        width: 20%;
+    }
+}
+/* For tablet use */
+@media only screen and (max-width: 900px){
+    .companyPicture img,.productsPicture img,.contactPicture img{
+        height: 170px;
+        width: 200px;
+        filter: brightness(0.5);
+        object-fit: cover;
+    }
+}
+@media only screen and(max-width: 800px){
+    .contact >div{
+        flex-direction: column;
+    }
+    
+}
+/* For mobile */
+@media only screen and (max-width: 700px){
+    body{
+        flex-wrap: nowrap;
+    }
+    .home{
+        width: 100%;
+    }
+    h1{
+        font-family: 'Blinker', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .nav{
+        flex-direction: column;
+    }
+    .home{
+        text-align: center;
+        flex-direction: column;
+    }
+    .navLink{
+        width: 100%;
+    }
+    .navLink a{
+        font-size: 16px;
+        margin: 5px 10px;
+        transition: 0.3s;
+        width: 40%;
+        align-items: center;
+    }
+    .navLeftPart{
+        width: 100%;
+    }
+    .navRightPart{
+        display: none;
+    }
+    .glass{
+        display: block;
+        width: max-content;
+        margin: 10px 20px;
+        padding: 0px 10px;
+    }
+    .glass:hover{
+        padding: 0px 10px;
+        background-color: #ffffff;
+        font-family: 'Noto Sans JP', sans-serif;
+        border: 2px solid #008000;
+        color: #008000;
+    }
+    #learnMoreId{
+        font-size: 14px;
+    }
+    #learnMoreId:hover{
+        background-color: #FFFFFF;
+        color: green;
+        border: 1px solid green;
+        font-size: 14px;
+    }
+    .LearnMore img{
+        height: 200px;
+    }
+    .companyPicture,.productsPicture,.contactPicture{
+        width: 100%;
+        padding: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .companyPicture img,.productsPicture img,.contactPicture img{
+        height: 200px;
+        width: 300px;
+        filter: brightness(0.5);
+        object-fit: cover;
+    }
+    #company,#product,#contact{
+        font-size: 40px;
+    }
+    .sub button{
+        width: 100px;
+        float: left;
+        height: 40px;
+        font-size: 16px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    .contact,.sitemap{
+        width: 100%;
+    }
+    .navRightPart.responsive{
+        width: 100%;
+        display: block; 
+        text-align: center;
+        background-color: #DCDCDC;
+    }
+    
+}
+
+/* Style of the thank you notification */
+.Thank{
+    text-align: center;
+    display: grid;
+}
+.Thank p{
+    font-size: 22px;
+}
+.Thank a{
+    background-color: green;
+    padding: 10px 20px;
+    height: fit-content;
+    width: max-content;
+    margin: 20px auto;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    transition: 0.3s;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.Thank a:hover{
+    background-color: #FFFFFF;
+    border: 2px solid #008000;
+    color: #008000;
+}
