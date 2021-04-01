@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liana Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Blinker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="headerBar">
+        <div class="items">
+            <a href="latestNews.html" id="headerLink">News</a>
+            <a href="" target="blank" id="headerLink">Intranet</a>
+            <div class="langMenu">
+                <div class="selected">English</div>
+                <ul>
+                    <li><a href="main.html" class="Eng">English</a></li>
+                    <li><a href="mainSuomi.html" class="Fi">Suomi</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="nav">
+        <div class="navLeftPart">
+            <div class="home">
+                <a href="main.html"><img src="D:\IT\Javascript - html5\Working Project\photo\companylogo.jpg" alt="Logo"></a>
+            </div>
+            <div class="navLink">
+                <a href="" target="blank">Company</a>
+                <a href="" target="blank">Products</a>
+                <a href="contact.html" target="blank">Contact us</a>
+                <button type="button" class="glass" onclick="display()">&#128269</button>
+            </div>
+        </div>
+        <div class="navRightPart" id="SearchPart">
+            <input type="text">
+            <button onclick="Search()" type="button">Search</button>
+        </div>
+        <div class="clearFloat"style="clear:both"></div>
+    </div>
+    <div class="LearnMore">
+        <img src="D:\IT\Javascript - html5\Working Project\photo\pic1.jpg" alt="office">
+        <div class="BriefIntroduction">
+            <h1>Software fueling digital marketing</h1>
+            <a href="" id="learnMoreId">Learn more</a>
+        </div>
+    </div>
+    <section>
+        <div class="pic">
+            <div class="companyPicture">
+                <img src="D:\IT\Javascript - html5\Working Project\photo\pic2.jpg" alt="company">
+                <a href="" id="company">Company</a>
+            </div>
+            <div class="productsPicture">
+                <img src="D:\IT\Javascript - html5\Working Project\photo\pic3.jpg" alt="product">
+                <a href="" id="product">Product</a>
+            </div>
+            <div class="contactPicture">
+                <img src="D:\IT\Javascript - html5\Working Project\photo\pic4.jpg" alt="contact">
+                <a href="contact.html" id="contact">Contact us</a>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+        <div class="turnover">
+            <div class="client">
+                <h3 class="number" data-target="3000">0</h3><p>Client</p>
+            </div>
+            <div class="employee">
+                <h3 class="number" data-target="180">0</h3><p>Employees</p>
+            </div>
+            <div class="users">
+                <h3 class="number" data-target="10000">0</h3><p>Daily users</p>
+            </div>
+        </div>
+    </section>
+    <article>
+        <h2>Latest news</h2>
+        <a href="latestNews.html" target="blank" id="readMoreNews">Read more</a>
+    </article>
+    <div class="references">
+        <h2>References</h2>
+    </div>
+    <div class="sub">
+        <h2>Subscribe to our newsletter</h2>
+        <p>Follow our story and get the latest promotional news about our products and events.</p>
+        <form action="thankyou.php" method="POST" autocomplete="on">
+            <input type="email" name="email" placeholder="Type email address" id="subElementText" required>
+            <input type="submit" value="Subscribe" id="button">
+        </form>
+    </div>
+    <footer>
+        <div class="contact">
+            <h4>Liana Technologies</h4>
+            <div>
+                <div class="contactInfo">
+                    <h5>Sales and inquiries</h5>
+                    <p>Email: sales@lianatech.com</p>
+                    <p>Phone: +358 10 387 7053</p>
+                </div>
+                <form method="POST" action="mailto:sales@lianatech.com" class="button">
+                    <input type="submit" value="Contact us">
+                </form>
+            </div>
+        </div>
+        <div class="sitemap">
+            <div class="site">
+                <a href="" target="blank">Company</a>
+                <a href="" target="blank">Product</a>
+                <a href="contact.html" target="blank">Contact us</a>
+                <a href="latestNews.html" target="blank">Uutiset</a>
+            </div>
+            <div class="socialMedia">
+                <a href="https://www.facebook.com/LianaTechFI/" target="blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/liana-technologies/?originalSubdomain=fi" target="blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/lianatechnologies/" target="blank">
+                    <i class="fa fa-instagram"></i>
+                </a>
+                <a href="https://twitter.com/lianatech_fi" target="blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
